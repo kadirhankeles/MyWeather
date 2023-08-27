@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DetailCollectionViewCell" customModule="WeatherMyApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="195" height="87"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="195" height="87"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CEU-H4-GbW">
+                        <rect key="frame" x="0.0" y="0.0" width="195" height="87"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="fjs-Xe-EDE">
+                                <rect key="frame" x="10" y="20" width="175" height="47"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud.rain.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="053-Pd-G5y">
+                                        <rect key="frame" x="0.0" y="-0.33333333333333215" width="43.666666666666664" height="48"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="evB-z4-Pd8">
+                                        <rect key="frame" x="59.666666666666679" y="0.0" width="115.33333333333331" height="47"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="86%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Az-2c-iEr">
+                                                <rect key="frame" x="0.0" y="0.0" width="32.333333333333336" height="18.666666666666668"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kelemba" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZQ-Eq-H1k">
+                                                <rect key="frame" x="0.0" y="28.666666666666664" width="52.333333333333336" height="18.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="053-Pd-G5y" firstAttribute="width" secondItem="CEU-H4-GbW" secondAttribute="height" multiplier="0.5" id="Jtl-Ks-7Qc"/>
+                            <constraint firstAttribute="bottom" secondItem="fjs-Xe-EDE" secondAttribute="bottom" constant="20" id="PR4-wl-HyR"/>
+                            <constraint firstItem="fjs-Xe-EDE" firstAttribute="top" secondItem="CEU-H4-GbW" secondAttribute="top" constant="20" id="dMd-5B-7gR"/>
+                            <constraint firstItem="fjs-Xe-EDE" firstAttribute="leading" secondItem="CEU-H4-GbW" secondAttribute="leading" constant="10" id="jOc-FD-47B"/>
+                            <constraint firstAttribute="trailing" secondItem="fjs-Xe-EDE" secondAttribute="trailing" constant="10" id="nau-x8-wp6"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="CEU-H4-GbW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="AP0-MX-DJ0"/>
+                <constraint firstAttribute="bottom" secondItem="CEU-H4-GbW" secondAttribute="bottom" id="BKC-4v-TJD"/>
+                <constraint firstItem="CEU-H4-GbW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="T2j-h4-AJX"/>
+                <constraint firstAttribute="trailing" secondItem="CEU-H4-GbW" secondAttribute="trailing" id="c8r-NM-K8S"/>
+            </constraints>
+            <size key="customSize" width="195" height="87"/>
+            <connections>
+                <outlet property="detailBoldLabel" destination="9Az-2c-iEr" id="MdO-hU-rHu"/>
+                <outlet property="detailImageView" destination="053-Pd-G5y" id="Qt0-sw-1Kk"/>
+                <outlet property="detailLabel" destination="IZQ-Eq-H1k" id="IT6-I2-2cL"/>
+            </connections>
+            <point key="canvasLocation" x="164.12213740458014" y="32.74647887323944"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="cloud.rain.fill" catalog="system" width="126" height="128"/>
+    </resources>
+</document>
